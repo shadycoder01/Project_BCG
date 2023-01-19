@@ -18,8 +18,8 @@ pd.set_option('display.max_columns',None,'display.max_rows',100)
 
 class main:
     def __init__(self):
-        self.input_path_units = configuration.Configuration(os.getcwd(),'Data','Case_Study').get_units_use_path()
-        self.input_path_charges = configuration.Configuration(os.getcwd(),'Data','Case_Study').get_charges_use_path()
+        self.input_path_units = configuration.Configuration(os.getcwd(),'input_data','output_data').get_units_use_path()
+        self.input_path_charges = configuration.Configuration(os.getcwd(),'input_data','output_data').get_charges_use_path()
         self.output_path = configuration.Configuration(os.getcwd()).output_path_analysis_2()
         
     def analysis_2(self): 
