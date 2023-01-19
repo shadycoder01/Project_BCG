@@ -21,8 +21,8 @@ class main:
         """
         This function is used to initialise path to input and output data
         """
-        self.input_path = configuration.Configuration(os.getcwd(),'Data','Case_Study').get_person_use_path()
-        self.output_path = configuration.Configuration(os.getcwd(),'Data','Case_Study').output_path_analysis_1()
+        self.input_path = configuration.Configuration(os.getcwd(),'input_data','output_data').get_person_use_path()
+        self.output_path = configuration.Configuration(os.getcwd(),'input_data','output_data').output_path_analysis_1()
         
     def analysis_1(self):
         df_person_use = pd.read_csv(self.input_path)
