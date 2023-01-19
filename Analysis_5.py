@@ -18,9 +18,9 @@ pd.set_option('display.max_columns',None,'display.max_rows',100)
 
 class main:
     def __init__(self):
-        self.input_path_person = configuration.Configuration(os.getcwd(),'Data','Case_Study').get_person_use_path()
-        self.input_path_unit = configuration.Configuration(os.getcwd(),'Data','Case_Study').get_units_use_path()
-        self.output_path = configuration.Configuration(os.getcwd(),'Data','Case_Study').output_path_analysis_5()
+        self.input_path_person = configuration.Configuration(os.getcwd(),'input_data','output_data').get_person_use_path()
+        self.input_path_unit = configuration.Configuration(os.getcwd(),'input_data','output_data').get_units_use_path()
+        self.output_path = configuration.Configuration(os.getcwd(),'input_data','output_data').output_path_analysis_5()
         
     def analysis_5(self): 
         df_person_use = pd.read_csv(self.input_path_person)
